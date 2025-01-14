@@ -1,0 +1,19 @@
+name: cosmx
+channels:
+  - conda-forge
+  - bioconda
+  - R
+  - tiledb
+dependencies: 
+  - bioconda::snakemake=8.27.1 # Snakemake, a workflow (pipeline) management system. 
+  - conda-forge::python=3.11.3 # Python.
+  - conda-forge::r-base=4.3.1 # R.
+  - conda-forge::r-circlize=0.4.16 # For colorRamp2() function, used in helper functions for spatial analysis.
+  - conda-forge::r-devtools=2.4.5 # For installing external R packages from GitHub etc.
+  - conda-forge::r-outliers=0.15 # Collection of tests commonly used for identifying outliers.
+  - conda-forge::r-r.utils=2.12.3 # To read gz and bz2 files directly, fread() requires 'R.utils' package.
+  - conda-forge::r-rmarkdown=2.29 # Convert .Rmd (Rmarkdown) documents into a variety of formats (HTML, PDF, etc.)
+  - conda-forge::r-seurat=5.0.3 # Analysis of single-cell data.
+  - conda-forge::r-tidyverse=2.0.0 # A "grammar" of data manipulation in R.
+  - conda-forge::r-yaml=2.3.8 # Reading in YAML files.
+  - r::r-regexpipes=0.0.1 # Pipe-friendly version of regex functions.
